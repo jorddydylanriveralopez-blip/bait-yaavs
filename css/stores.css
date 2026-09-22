@@ -42,11 +42,11 @@
   padding: 0.85rem 1.15rem;
   border-radius: 18px;
   background:
-    linear-gradient(160deg, #1a1a1a 0%, #000 100%);
-  border: 1px solid rgba(255, 209, 0, 0.4);
+    linear-gradient(160deg, #ffffff 0%, #fff8d6 100%);
+  border: 1px solid rgba(255, 209, 0, 0.55);
   box-shadow:
-    0 16px 36px rgba(0, 0, 0, 0.22),
-    0 0 0 1px rgba(255, 209, 0, 0.08) inset;
+    0 12px 28px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 209, 0, 0.12) inset;
 }
 
 .pospago-stores__head-logo {
@@ -417,9 +417,9 @@
   width: min(920px, 100%);
   max-height: min(88vh, 820px);
   padding: 0.75rem;
-  background: #0b141c;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
   overflow: auto;
 }
 
@@ -429,12 +429,12 @@
   height: auto;
   max-height: min(74vh, 700px);
   object-fit: contain;
-  background: #050a10;
+  background: #f3f4f6;
 }
 
 .pospago-stores__lightbox-caption {
   margin: 0.7rem 0.2rem 0.15rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: #111;
   font-size: 0.92rem;
   font-weight: 700;
 }
