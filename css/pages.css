@@ -292,3 +292,14 @@
 body.is-subpage .entry-splash {
   display: none !important;
 }
+
+.page-hero .btn-cta--ghost {
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  background: transparent;
+}
+
+.page-hero .btn-cta--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
