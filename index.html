@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Bait × YAAVS — planes, portabilidad, equipos y tiendas. Misma estructura que YAAVS Pospago, identidad Bait.">
+  <title>Bait-Yaavs | Planes Bait</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/decor.css">
+  <link rel="stylesheet" href="css/site.css?v=light-bait">
+  <link rel="stylesheet" href="css/stores.css?v=light-bait">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="icon" href="assets/Imagenes/sin-tiitulo-1-01-oViAJMe9HhOpTQcr.png" type="image/png">
+</head>
+<body class="is-entry-active">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div id="entry-splash" class="entry-splash" aria-hidden="true">
+    <span class="entry-splash__glow" aria-hidden="true"></span>
+    <img class="entry-splash__logo" src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif" alt="Bait" width="130" height="130">
+  </div>
+
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="page-bg__vignette" aria-hidden="true"></div>
+  <div class="page-bg__scanlines" aria-hidden="true"></div>
+  <div class="bait-stripe bait-stripe--edge-top" aria-hidden="true"></div>
+  <div class="bait-stripe bait-stripe--edge-right" aria-hidden="true"></div>
+  <div class="bait-stripe bait-stripe--pre-footer" aria-hidden="true"></div>
+  <div class="bait-stripe bait-stripe--side" aria-hidden="true"></div>
+  <div class="bait-stripe bait-stripe--bottom" aria-hidden="true"></div>
+
+  <div class="page-decor" aria-hidden="true">
+    <div class="decor-grid"></div>
+    <span class="decor-orb decor-orb--yellow"></span>
+    <span class="decor-orb decor-orb--blue"></span>
+    <span class="decor-orb decor-orb--magenta"></span>
+    <span class="decor-orb decor-orb--yellow-soft"></span>
+    <span class="decor-beam decor-beam--1"></span>
+    <span class="decor-beam decor-beam--2"></span>
+    <span class="decor-beam decor-beam--3"></span>
+    <span class="decor-hex decor-hex--1"></span>
+    <span class="decor-hex decor-hex--2"></span>
+    <span class="decor-hex decor-hex--3"></span>
+    <span class="decor-pulse-ring decor-pulse-ring--1"></span>
+    <span class="decor-pulse-ring decor-pulse-ring--2"></span>
+    <span class="decor-badge-float decor-badge-float--gratis"><span class="esim-brand">eSIM</span> gratis</span>
+    <span class="decor-badge-float decor-badge-float--gb">12 GB</span>
+    <span class="decor-ring decor-ring--1"></span>
+    <span class="decor-ring decor-ring--2"></span>
+    <span class="decor-chip decor-chip--1"></span>
+    <span class="decor-chip decor-chip--2"></span>
+    <span class="decor-chip decor-chip--3"></span>
+    <span class="decor-chip decor-chip--4"></span>
+    <span class="decor-chip decor-chip--5"></span>
+    <span class="decor-chip decor-chip--6"></span>
+    <span class="decor-phone decor-phone--1"></span>
+    <span class="decor-phone decor-phone--2"></span>
+    <span class="decor-phone decor-phone--3"></span>
+    <span class="decor-phone decor-phone--4"></span>
+    <span class="decor-sim decor-sim--1"></span>
+    <span class="decor-sim decor-sim--2"></span>
+    <span class="decor-sim decor-sim--3"></span>
+    <span class="decor-sim decor-sim--4"></span>
+    <span class="decor-sim decor-sim--5"></span>
+    <span class="decor-spark decor-spark--1"></span>
+    <span class="decor-spark decor-spark--2"></span>
+    <span class="decor-spark decor-spark--blue decor-spark--3"></span>
+    <span class="decor-spark decor-spark--pink decor-spark--4"></span>
+    <span class="decor-spark decor-spark--5"></span>
+    <span class="decor-spark decor-spark--blue decor-spark--6"></span>
+    <span class="decor-spark decor-spark--pink decor-spark--7"></span>
+    <span class="decor-spark decor-spark--8"></span>
+    <span class="decor-spark decor-spark--9"></span>
+    <span class="decor-spark decor-spark--10"></span>
+    <span class="decor-spark decor-spark--11"></span>
+    <span class="decor-spark decor-spark--12"></span>
+    <i class="decor-icon decor-icon--1 fa-solid fa-signal"></i>
+    <i class="decor-icon decor-icon--2 fa-solid fa-wifi"></i>
+    <i class="decor-icon decor-icon--3 fa-solid fa-sim-card"></i>
+    <i class="decor-icon decor-icon--4 fa-solid fa-tower-cell"></i>
+    <i class="decor-icon decor-icon--5 fa-solid fa-mobile-screen"></i>
+    <i class="decor-icon decor-icon--6 fa-solid fa-bolt"></i>
+    <i class="decor-icon decor-icon--7 fa-solid fa-globe"></i>
+    <i class="decor-icon decor-icon--8 fa-solid fa-qrcode"></i>
+    <i class="decor-icon decor-icon--9 fa-solid fa-shield-halved"></i>
+    <i class="decor-icon decor-icon--10 fa-solid fa-download"></i>
+    <i class="decor-icon decor-icon--11 fa-solid fa-microchip"></i>
+    <i class="decor-icon decor-icon--12 fa-solid fa-share-nodes"></i>
+    <i class="decor-icon decor-icon--13 fa-solid fa-comments"></i>
+    <i class="decor-icon decor-icon--14 fa-solid fa-chart-line"></i>
+    <i class="decor-icon decor-icon--15 fa-solid fa-cloud"></i>
+    <i class="decor-icon decor-icon--16 fa-solid fa-headset"></i>
+    <i class="decor-icon decor-icon--17 fa-solid fa-tablet-screen-button"></i>
+    <i class="decor-icon decor-icon--18 fa-solid fa-satellite-dish"></i>
+    <i class="decor-icon decor-icon--19 fa-solid fa-lock"></i>
+    <i class="decor-icon decor-icon--20 fa-solid fa-arrows-rotate"></i>
+    <i class="decor-icon decor-icon--21 fa-solid fa-star"></i>
+    <i class="decor-icon decor-icon--22 fa-solid fa-trophy"></i>
+    <i class="decor-icon decor-icon--23 fa-solid fa-heart-pulse"></i>
+    <i class="decor-icon decor-icon--24 fa-solid fa-rocket"></i>
+  </div>
+
+  <div class="desktop-flanks" aria-hidden="true">
+    <aside class="desktop-flank desktop-flank--left">
+      <span class="desktop-flank__glow"></span>
+      <span class="desktop-flank__rail"></span>
+      <span class="desktop-flank__badge desktop-flank__badge--gb">12 GB</span>
+      <span class="desktop-flank__dot"></span>
+      <i class="desktop-flank__icon fa-solid fa-sim-card"></i>
+      <i class="desktop-flank__icon desktop-flank__icon--blue fa-solid fa-wifi"></i>
+      <span class="desktop-flank__badge desktop-flank__badge--vert">30 días</span>
+      <i class="desktop-flank__icon fa-solid fa-download"></i>
+    </aside>
+    <aside class="desktop-flank desktop-flank--right">
+      <span class="desktop-flank__glow"></span>
+      <span class="desktop-flank__rail"></span>
+      <span class="desktop-flank__badge desktop-flank__badge--gratis">Gratis</span>
+      <span class="desktop-flank__dot"></span>
+      <i class="desktop-flank__icon desktop-flank__icon--pink fa-solid fa-bolt"></i>
+      <i class="desktop-flank__icon fa-solid fa-signal"></i>
+      <span class="desktop-flank__badge desktop-flank__badge--vert"><span class="esim-brand">eSIM</span></span>
+      <i class="desktop-flank__icon desktop-flank__icon--blue fa-solid fa-globe"></i>
+    </aside>
+  </div>
+
+  <div id="main-app">
+    <header class="site-header" id="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#inicio" aria-label="Bait-Yaavs inicio">
+          <img
+            class="brand__bait"
+            src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif"
+            alt="Bait"
+            width="351"
+            height="200"
+            decoding="async"
+          >
+          <span class="brand__divider" aria-hidden="true"></span>
+          <img
+            class="brand__yaavs"
+            src="assets/Imagenes/recurso-6-dRbQkWfZFlakSEfc.png"
+            alt="YAAVS"
+            width="346"
+            height="82"
+            decoding="async"
+          >
+          <span class="brand__tag">Exclusiva</span>
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+            <span class="sr-only">Menú</span>
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__list" id="nav-menu">
+            <li>
+              <a href="#nosotros">
+                <span class="nav__label">¿Quiénes somos?</span>
+                <span class="nav__hint">Bait × YAAVS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#planes">
+                <span class="nav__label">Planes</span>
+                <span class="nav__hint">Prepago · Pospago · MiFi</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tiendas">
+                <span class="nav__label">Tiendas</span>
+                <span class="nav__hint">Encuentra tu sucursal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#promociones">
+                <span class="nav__label">Promociones</span>
+                <span class="nav__hint">Equipos y ofertas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#renovaciones">
+                <span class="nav__label">Renueva</span>
+                <span class="nav__hint">Más GB, mejor plan</span>
+              </a>
+            </li>
+            <li class="nav__foot">
+              <a class="btn-cta btn-cta--wa" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20cotizar%20un%20plan%20Bait" target="_blank" rel="noopener">Cotizar ahora</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="btn-cta btn-cta--wa" aria-label="Cotiza ahora por WhatsApp" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20cotizar%20un%20plan%20Bait" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>Cotiza ahora</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO full-bleed carousel -->
+      <section class="hero" id="inicio" aria-label="Promoción destacada Bait">
+        <div class="hero__carousel" data-hero-carousel>
+          <div class="hero__track" data-hero-track>
+            <article class="hero__slide is-active" data-hero-slide>
+              <picture>
+                <source media="(max-width: 720px)" srcset="assets/Imagenes/nchOLhsCZXVPAviZ-nchOLhsCZXVPAviZ.png">
+                <img
+                  src="assets/Imagenes/head-horizontal-1KnnAbFj9NkGEgKQ.png"
+                  alt="Conecta tu juego con Bait — descarga gratis tu eSIM"
+                  width="1920"
+                  height="1080"
+                  decoding="async"
+                  fetchpriority="high"
+                >
+              </picture>
+            </article>
+            <article class="hero__slide" data-hero-slide>
+              <picture>
+                <source media="(max-width: 720px)" srcset="assets/Imagenes/porta-2-xJceAzzjAolcYUiz.png">
+                <img
+                  src="assets/Imagenes/porta-subhead-pc-GTaXbKmmoPEdZwqo.png"
+                  alt="Portabilidad Bait — trae tu número"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+            </article>
+            <article class="hero__slide" data-hero-slide>
+              <picture>
+                <source media="(max-width: 720px)" srcset="assets/Imagenes/porta-2-xJceAzzjAolcYUiz.png">
+                <img
+                  src="assets/Imagenes/porta-2-xJceAzzjAolcYUiz.png"
+                  alt="Activa tu eSIM Bait"
+                  width="1080"
+                  height="1080"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+            </article>
+          </div>
+
+          <button type="button" class="hero__arrow hero__arrow--prev" data-hero-prev aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="hero__arrow hero__arrow--next" data-hero-next aria-label="Siguiente">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <div class="hero__dots" data-hero-dots role="tablist" aria-label="Banners"></div>
+          <div class="hero__edge" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- Claims Bait -->
+      <section class="claims" aria-label="Beneficios Bait">
+        <div class="claims__band">
+          <div class="claims__inner">
+            <div class="claims__brand" aria-hidden="true">
+              <span class="claims__brand-glow"></span>
+              <img
+                class="claims__logo"
+                src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif"
+                alt=""
+                width="351"
+                height="200"
+                decoding="async"
+              >
+            </div>
+            <ul class="claims__list">
+              <li class="claims__line">Más gigas</li>
+              <li class="claims__line">Más beneficios</li>
+              <li class="claims__line">Mejor cobertura</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿Quiénes somos? -->
+      <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+        <div class="wrap">
+          <a class="about-banner" href="#tiendas" aria-label="Conoce más de nosotros">
+            <div class="about-banner__visual">
+              <img
+                class="about-banner__img"
+                src="assets/images/about-provisional.jpg"
+                alt="Equipo Bait × YAAVS — atención cercana en tienda"
+                width="1520"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="about-banner__scrim" aria-hidden="true"></span>
+              <span class="about-banner__mark">
+                <img
+                  src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif"
+                  alt=""
+                  width="351"
+                  height="200"
+                  decoding="async"
+                >
+              </span>
+              <span class="about-banner__chip">Provisional · tienda YAAVS</span>
+            </div>
+            <div class="about-banner__copy">
+              <p class="eyebrow">¿Quiénes somos?</p>
+              <h2 id="nosotros-title">Bait con cara <em>YAAVS</em></h2>
+              <p>Somos el punto donde la energía Bait se encuentra con atención cercana: planes, portabilidad y activación en tienda.</p>
+              <span class="btn-cta btn-cta--magenta">Conoce más de nosotros →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Promociones / equipos -->
+      <section class="section section--muted" id="promociones" aria-labelledby="promos-title">
+        <div class="wrap">
+          <div class="section__head-row">
+            <header class="section__head">
+              <p class="eyebrow">Equipos en promoción</p>
+              <h2 id="promos-title">Estrena smartphone con <em>Bait</em></h2>
+              <p class="section__lead">Misma lógica de catálogo que Pospago: cotiza el equipo y te armamos el plan.</p>
+            </header>
+            <a class="btn-cta btn-cta--wa" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20cotizar%20un%20equipo" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotizar equipo
+            </a>
+          </div>
+
+          <div class="devices">
+            <article class="device">
+              <span class="device__badge">Portabilidad</span>
+              <h3>iPhone / Android</h3>
+              <p>Lleva tu número a Bait y estrena equipo con acompañamiento YAAVS.</p>
+              <p class="device__price">Cotizar <small>al mes</small></p>
+              <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20cotizar%20smartphone%20con%20portabilidad" target="_blank" rel="noopener">Cotizar ahora</a>
+            </article>
+            <article class="device">
+              <span class="device__badge">eSIM</span>
+              <h3>eSIM Bait</h3>
+              <p>Activa digital, gigas y redes — misma promo de bait.yaavs.com.mx.</p>
+              <p class="device__price">Gratis <small>promo</small></p>
+              <a class="btn-cta btn-cta--yellow" href="https://bait.yaavs.com.mx/" target="_blank" rel="noopener">Ver promo eSIM</a>
+            </article>
+            <article class="device">
+              <span class="device__badge">MiFi</span>
+              <h3>Internet inalámbrico</h3>
+              <p>Datos para casa, negocio o viaje con planes MiFi Bait.</p>
+              <p class="device__price">Desde <small>consultar</small></p>
+              <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20info%20MiFi%20Bait" target="_blank" rel="noopener">Cotizar MiFi</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes -->
+      <section class="section" id="planes" aria-labelledby="planes-title">
+        <div class="wrap">
+          <div class="section__head-row">
+            <header class="section__head">
+              <p class="eyebrow">Planes Bait</p>
+              <h2 id="planes-title">Elige el plan a tu medida</h2>
+              <p class="section__lead">Tabs como en Pospago — aquí con familias Bait.</p>
+            </header>
+            <a class="btn-cta btn-cta--wa" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20cotizar%20mi%20plan%20Bait" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotiza tu plan ahora
+            </a>
+          </div>
+
+          <div class="plan-tabs" role="tablist" aria-label="Familias de planes">
+            <button type="button" class="plan-tabs__btn is-active" role="tab" aria-selected="true" data-plan-tab="prepago">Prepago</button>
+            <button type="button" class="plan-tabs__btn" role="tab" aria-selected="false" data-plan-tab="pospago">Pospago</button>
+            <button type="button" class="plan-tabs__btn" role="tab" aria-selected="false" data-plan-tab="mifi">MiFi</button>
+          </div>
+
+          <div class="plans-panel" data-plan-panel="prepago">
+            <div class="plans">
+              <article class="plan">
+                <h3 class="plan__name">Paquete flexible</h3>
+                <p class="plan__price">Recarga <small>a tu ritmo</small></p>
+                <ul class="plan__list">
+                  <li>Control total de tu gasto</li>
+                  <li>Activación rápida en tienda</li>
+                  <li>Apps y datos según paquete</li>
+                </ul>
+                <a class="btn-cta btn-cta--yellow" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20prepago%20Bait" target="_blank" rel="noopener">Cotizar prepago</a>
+              </article>
+              <article class="plan plan--featured">
+                <span class="plan__badge">Popular</span>
+                <h3 class="plan__name">Más gigas</h3>
+                <p class="plan__price">Promo <small>vigente</small></p>
+                <ul class="plan__list">
+                  <li>Más datos para tu día a día</li>
+                  <li>Redes y mensajería</li>
+                  <li>Asesoría YAAVS incluida</li>
+                </ul>
+                <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20paquete%20con%20m%C3%A1s%20gigas%20Bait" target="_blank" rel="noopener">Cotizar ahora</a>
+              </article>
+              <article class="plan">
+                <h3 class="plan__name">Porta y activa</h3>
+                <p class="plan__price">Trae <small>tu número</small></p>
+                <ul class="plan__list">
+                  <li>Portabilidad guiada</li>
+                  <li>Conservas tu número</li>
+                  <li>Activación en sucursal</li>
+                </ul>
+                <a class="btn-cta btn-cta--yellow" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20portarme%20a%20Bait" target="_blank" rel="noopener">Iniciar portabilidad</a>
+              </article>
+            </div>
+          </div>
+
+          <div class="plans-panel" data-plan-panel="pospago" hidden>
+            <div class="plans">
+              <article class="plan">
+                <h3 class="plan__name">Renta esencial</h3>
+                <p class="plan__price">Mensual <small>consultar</small></p>
+                <ul class="plan__list">
+                  <li>Facturación clara</li>
+                  <li>Minutos y SMS</li>
+                  <li>Soporte en tienda YAAVS</li>
+                </ul>
+                <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20pospago%20Bait%20esencial" target="_blank" rel="noopener">Cotizar</a>
+              </article>
+              <article class="plan plan--featured">
+                <span class="plan__badge">Recomendado</span>
+                <h3 class="plan__name">Renta plus</h3>
+                <p class="plan__price">Más GB <small>al mes</small></p>
+                <ul class="plan__list">
+                  <li>Más datos incluidos</li>
+                  <li>Ideal para portabilidad</li>
+                  <li>Acompañamiento completo</li>
+                </ul>
+                <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20pospago%20Bait%20plus" target="_blank" rel="noopener">Cotizar</a>
+              </article>
+              <article class="plan">
+                <h3 class="plan__name">Negocio</h3>
+                <p class="plan__price">Líneas <small>a medida</small></p>
+                <ul class="plan__list">
+                  <li>Varias líneas Bait</li>
+                  <li>Atención preferente</li>
+                  <li>Cotización personalizada</li>
+                </ul>
+                <a class="btn-cta btn-cta--yellow" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20planes%20negocio%20Bait" target="_blank" rel="noopener">Cotizar negocio</a>
+              </article>
+            </div>
+          </div>
+
+          <div class="plans-panel" data-plan-panel="mifi" hidden>
+            <div class="plans">
+              <article class="plan plan--featured">
+                <span class="plan__badge">MiFi</span>
+                <h3 class="plan__name">Internet inalámbrico</h3>
+                <p class="plan__price">Datos <small>compartibles</small></p>
+                <ul class="plan__list">
+                  <li>Casa, oficina o viaje</li>
+                  <li>Te ayudamos a elegir GB</li>
+                  <li>Activación en tienda</li>
+                </ul>
+                <a class="btn-cta btn-cta--magenta" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20MiFi%20Bait" target="_blank" rel="noopener">Cotizar MiFi</a>
+              </article>
+              <article class="plan">
+                <h3 class="plan__name">Datos extra</h3>
+                <p class="plan__price">Boost <small>cuando lo necesites</small></p>
+                <ul class="plan__list">
+                  <li>Complementa tu plan</li>
+                  <li>Sin complicaciones</li>
+                  <li>Asesoría por WhatsApp</li>
+                </ul>
+                <a class="btn-cta btn-cta--yellow" href="https://wa.me/525522331210?text=Hola%2C%20quiero%20datos%20extra%20Bait" target="_blank" rel="noopener">Cotizar</a>
+              </article>
+              <article class="plan">
+                <h3 class="plan__name">Setup en tienda</h3>
+                <p class="plan__price">Listo <small>el mismo día</small></p>
+                <ul class="plan__list">
+                  <li>Configuración guiada</li>
+                  <li>Prueba de señal</li>
+                  <li>Soporte presencial</li>
+                </ul>
+                <a class="btn-cta btn-cta--yellow" href="#tiendas">Ver tiendas</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Renueva -->
+      <section class="section section--muted" id="renovaciones" aria-labelledby="renew-title">
+        <div class="wrap">
+          <div class="renew">
+            <div class="renew__copy">
+              <p class="eyebrow">Renueva tu línea</p>
+              <h2 id="renew-title">Más gigas.<br>Mejor conexión Bait.</h2>
+              <p>Contrata o renueva y disfruta más datos, redes y acompañamiento YAAVS — mismo flujo que en Pospago.</p>
+              <a class="btn-cta btn-cta--wa" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20renovar%20mi%20l%C3%ADnea%20Bait" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Quiero renovar
+              </a>
+            </div>
+            <ol class="renew__steps">
+              <li>
+                <span class="renew__step-num" aria-hidden="true">01</span>
+                <span>Elige prepago, pospago o MiFi</span>
+              </li>
+              <li>
+                <span class="renew__step-num" aria-hidden="true">02</span>
+                <span>Cotiza con un asesor YAAVS por WhatsApp</span>
+              </li>
+              <li>
+                <span class="renew__step-num" aria-hidden="true">03</span>
+                <span>Visita tu tienda y activa tu beneficio</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tiendas -->
+      <section class="pospago-stores" id="tiendas" data-pospago-stores data-carrier="bait" aria-label="Sucursales Bait">
+        <header class="pospago-stores__head">
+          <div class="pospago-stores__head-row">
+            <div class="pospago-stores__head-copy">
+              <h2 class="pospago-stores__title" id="tiendas-title">Encuentra <span>tu</span> tienda</h2>
+            </div>
+            <div class="pospago-stores__logo-badge">
+              <img
+                class="pospago-stores__head-logo"
+                src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif"
+                alt="Bait"
+                width="160"
+                height="90"
+                decoding="async"
+              >
+            </div>
+          </div>
+        </header>
+
+        <div class="pospago-stores__stage is-revealed" data-store-stage id="tiendas-mapa">
+          <div class="pospago-stores__toolbar">
+            <div class="pospago-stores__toolbar-top">
+              <h3 class="pospago-stores__heading" data-store-title>Sucursales Bait</h3>
+              <span class="pospago-stores__count" data-store-count></span>
+            </div>
+            <form class="pospago-stores__search" onsubmit="return false">
+              <input type="search" data-store-q placeholder="Escribe ciudad, colonia o nombre de tienda" autocomplete="off">
+              <button type="button" data-store-geo>Qué sucursal tengo cerca</button>
+            </form>
+            <p class="pospago-stores__status" data-store-status></p>
+          </div>
+          <div class="pospago-stores__layout">
+            <div class="pospago-stores__list" data-store-list></div>
+            <div class="pospago-stores__map" data-store-map></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-label="Cotizar">
+        <div class="cta-band__bar" aria-hidden="true"></div>
+        <div class="wrap cta-band__inner">
+          <div>
+            <h2>¿Listo para pasarte a Bait?</h2>
+            <p>Estructura de Pospago, energía de bait.yaavs.com.mx — cotiza y te armamos el plan.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn-cta btn-cta--wa" href="https://wa.me/525522331210?text=Hola%20Bait-Yaavs%2C%20quiero%20pasarme%20a%20Bait" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotizar por WhatsApp
+            </a>
+            <a class="btn-cta btn-cta--ghost" href="#planes">Revisar planes</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <img src="assets/Imagenes/animaicon-logo-bait-1RU7VHarEqSh3Hjm.gif" alt="Bait" width="100" height="40">
+            <img src="assets/images/logo-yaavs.svg" alt="YAAVS" width="100" height="32">
+          </div>
+          <nav aria-label="Pie">
+            <a href="#nosotros">¿Quiénes somos?</a>
+            <a href="#planes">Planes</a>
+            <a href="#tiendas">Tiendas</a>
+            <a href="#promociones">Promociones</a>
+            <a href="https://wa.me/525522331210" target="_blank" rel="noopener">Cotizar</a>
+          </nav>
+        </div>
+        <div class="site-footer__legal">
+          <p>Consulta términos y política de uso justo en <a href="https://mibait.com" target="_blank" rel="noopener">mibait.com</a>. Marca Bait propiedad de su titular. YAAVS opera como distribuidor.</p>
+          <p>© <span data-year></span> Bait-Yaavs · Precios y promociones sujetos a vigencia y disponibilidad.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cookies" data-cookies role="dialog" aria-label="Cookies">
+    <p>Usamos cookies técnicas para que el sitio funcione bien. Al continuar, aceptas su uso.</p>
+    <button type="button" data-cookies-accept>Entendido</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="js/tiendas-stores.js?v=bait4" defer></script>
+  <script src="js/bait-stores.js?v=bait4" defer></script>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
