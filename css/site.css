@@ -189,10 +189,11 @@ button {
   top: 0;
   z-index: 100;
   height: var(--header-h);
-  background: rgba(10, 12, 16, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--ink);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
 }
 
 .site-header__inner {
@@ -218,8 +219,8 @@ button {
   margin: 0;
   padding: 0.35rem 0.85rem 0.35rem 0.55rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 209, 0, 0.45);
+  background: rgba(255, 209, 0, 0.12);
+  border: 1px solid rgba(255, 209, 0, 0.55);
 }
 
 .brand__bait,
@@ -241,7 +242,7 @@ button {
 .brand__divider {
   width: 1px;
   height: 22px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.18);
   flex: 0 0 auto;
 }
 
@@ -356,9 +357,10 @@ button {
     flex-direction: column;
     gap: 0.15rem;
     padding: 1rem 1.25rem 1.5rem;
-    background: #0f1115;
+    background: #ffffff;
     border-bottom: 3px solid var(--bait-amarillo);
-    color: #fff;
+    color: var(--ink);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
   }
 
   .nav.is-open .nav__list {
@@ -369,7 +371,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0.85rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .nav__label {
@@ -412,12 +414,12 @@ button {
     font-weight: 800;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.82);
+    color: rgba(17, 17, 17, 0.78);
     transition: color 0.2s;
   }
 
   .nav__list > li > a:hover {
-    color: var(--bait-amarillo);
+    color: var(--bait-magenta);
   }
 
   .nav__hint,
@@ -832,6 +834,14 @@ button {
 .section {
   position: relative;
   padding: clamp(3.5rem, 8vw, 5.5rem) 0;
+  background: transparent;
+}
+
+#quienes.section,
+#planes.section,
+#promos.section,
+#renueva.section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
 }
 
 .section--muted {
@@ -1401,8 +1411,10 @@ button {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.15rem;
-  background: rgba(0, 0, 0, 0.95);
-  border: 1px solid rgba(255, 209, 0, 0.35);
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   font-size: 0.85rem;
 }
 
